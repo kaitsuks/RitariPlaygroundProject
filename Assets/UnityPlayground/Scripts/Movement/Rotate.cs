@@ -6,7 +6,7 @@ using System.Collections;
 public class Rotate : Physics2DObject
 {
 	[Header("Input keys")]
-	public Enums.KeyGroups typeOfControl = Enums.KeyGroups.ArrowKeys;
+	//public Enums.KeyGroups typeOfControl = Enums.KeyGroups.ArrowKeys;
 
 	[Header("Rotation")]
 	public float speed = 5f;
@@ -16,22 +16,39 @@ public class Rotate : Physics2DObject
 	
 	// Update gets called every frame
 	void Update ()
-	{	
-		// Register the spin from the player input
-		// Moving with the arrow keys
-		if(typeOfControl == Enums.KeyGroups.ArrowKeys)
-		{
-			spin = Input.GetAxis("Horizontal");
-		}
-		else
-		{
-			spin = Input.GetAxis("Horizontal2");
-		}
-	}
-	
+	{
+        // Register the spin from the player input
+        // Moving with the arrow keys
+        //if(typeOfControl == Enums.KeyGroups.ArrowKeys)
+        //{
+        //	spin = Input.GetAxis("Horizontal");
+        //}
+        //else
+        //{
+        //	spin = Input.GetAxis("Horizontal2");
+        //}
 
-	// FixedUpdate is called every frame when the physics are calculated
-	void FixedUpdate ()
+       
+
+    }
+    private void LateUpdate()
+    {
+
+        if (Input.GetKeyDown("o"))
+        {
+            spin -= 10f;
+        }
+
+        if (Input.GetKeyDown("p"))
+        {
+            spin += 10f;
+        }
+
+    }
+
+
+        // FixedUpdate is called every frame when the physics are calculated
+        void FixedUpdate ()
 	{
 		// Apply the torque to the Rigidbody2D
 		rigidbody2D.AddTorque(-spin * speed);

@@ -8,7 +8,9 @@ public class Move : Physics2DObject
 	[Header("Input keys")]
 	public Enums.KeyGroups typeOfControl = Enums.KeyGroups.ArrowKeys;
 
-	[Header("Movement")]
+    //Enums.KeyGroups.
+ 
+    [Header("Movement")]
 	[Tooltip("Speed of movement")]
 	public float speed = 5f;
 	public Enums.MovementType movementType = Enums.MovementType.AllDirections;
@@ -22,18 +24,22 @@ public class Move : Physics2DObject
 	private float moveHorizontal;
 	private float moveVertical;
 
+    
 
-	// Update gets called every frame
-	void Update ()
-	{	
-		// Moving with the arrow keys
-		if(typeOfControl == Enums.KeyGroups.ArrowKeys)
-		{
-			moveHorizontal = Input.GetAxis("Horizontal");
-			moveVertical = Input.GetAxis("Vertical");
-		}
-		else
-		{
+
+    // Update gets called every frame
+    void Update ()
+	{
+        //Moving with the arrow keys
+        if (typeOfControl == Enums.KeyGroups.ArrowKeys)
+        {
+            moveHorizontal = Input.GetAxis("Horizontal");
+            moveVertical = Input.GetAxis("Vertical");
+        }
+        else
+
+
+        {
 			moveHorizontal = Input.GetAxis("Horizontal2");
 			moveVertical = Input.GetAxis("Vertical2");
 		}
@@ -72,4 +78,6 @@ public class Move : Physics2DObject
 		// Apply the force to the Rigidbody2d
 		rigidbody2D.AddForce(movement * speed * 10f);
 	}
+
+    
 }
