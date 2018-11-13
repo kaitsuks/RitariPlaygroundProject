@@ -1,15 +1,11 @@
 fileFormatVersion: 2
-guid: 8ca8ed7082256604386deac4b7e5a474
+guid: 2858661afc4e4fe4291a724b79c09271
 TextureImporter:
   fileIDToRecycleName:
-    21300000: KnightPartSheet1_0
-    21300002: KnightPartSheet1_1
-    21300004: KnightPartSheet1_2
-    21300006: KnightPartSheet1_3
-    21300008: KnightPartSheet1_4
-    21300010: KnightPartSheet1_5
-    21300012: KnightPartSheet1_6
-    21300014: KnightPartSheet1_7
+    21300000: SwordFightFeetSheet_0
+    21300002: SwordFightFeetSheet_1
+    21300004: SwordFightFeetSheet_2
+    21300006: SwordFightFeetSheet_3
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -125,161 +121,81 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: KnightPartSheet1_0
+      name: SwordFightFeetSheet_0
       rect:
         serializedVersion: 2
-        x: 9
-        y: 513
-        width: 38
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+        x: 63
+        y: 6
+        width: 89
+        height: 88
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 16, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ff825a86be8ef2345afc3fdc468459d0
+      spriteID: 2d9db7f3112c9b546aac4bfc65d8c434
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: KnightPartSheet1_1
+      name: SwordFightFeetSheet_1
       rect:
         serializedVersion: 2
-        x: 66
-        y: 510
-        width: 30
-        height: 78
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+        x: 144
+        y: 3
+        width: 108
+        height: 86
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 1, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4fd4e0169a3ad464a9e5af1fb34e11d7
+      spriteID: e3a6a7a20e579f445bf93dc89494b4a3
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: KnightPartSheet1_2
+      name: SwordFightFeetSheet_2
       rect:
         serializedVersion: 2
-        x: 123
-        y: 529
-        width: 60
-        height: 63
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 267
+        y: 2
+        width: 78
+        height: 86
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2cbfb385d4398db4f969f4e1fcbcc54d
+      spriteID: a57a242473fd4f341b210753b9c8881a
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: KnightPartSheet1_3
+      name: SwordFightFeetSheet_3
       rect:
         serializedVersion: 2
-        x: 225
-        y: 524
-        width: 45
-        height: 66
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 347
+        y: 3
+        width: 79
+        height: 84
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b967539ca7431c8409e26a5b0a64097f
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: KnightPartSheet1_4
-      rect:
-        serializedVersion: 2
-        x: 300
-        y: 403
-        width: 120
-        height: 183
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 87e08069940f2d64daa07f36ea706b41
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: KnightPartSheet1_5
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 408
-        width: 51
-        height: 78
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 93e5f6a3eb978f844b6e97ad6ad151d1
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: KnightPartSheet1_6
-      rect:
-        serializedVersion: 2
-        x: 131
-        y: 409
-        width: 43
-        height: 66
-      alignment: 1
-      pivot: {x: 0, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b22abde2ecc9981458f582a2c48e850e
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: KnightPartSheet1_7
-      rect:
-        serializedVersion: 2
-        x: 202
-        y: 415
-        width: 72
-        height: 40
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b296bfc466177f24c8410c27601b5e7b
+      spriteID: 5be2350d4dfba5c44a45098642ca7939
       vertices: []
       indices: 
       edges: []
@@ -287,7 +203,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 4d1eae54804d0e64ab522484b634d111
+    spriteID: 233ddcc959f3abf49b26e4148c16b6c4
     vertices: []
     indices: 
     edges: []
