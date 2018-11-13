@@ -37,12 +37,16 @@ public class RotLeftArm : Physics2DObject
 
         if (Input.GetKeyDown("f"))
         {
-            spin -= 1f;
+            if(spin > -1f) { spin -= 0.1f; }
+           
+            Debug.Log("Key f value of spin " + spin);
         }
 
         if (Input.GetKeyDown("g"))
         {
-            spin += 1f;
+            if (spin < 1f) { spin += 0.1f; }
+               
+            Debug.Log("Key g value of spin " + spin);
         }
 
     }
