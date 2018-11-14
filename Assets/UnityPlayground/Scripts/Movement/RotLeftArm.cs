@@ -9,8 +9,11 @@ public class RotLeftArm : Physics2DObject
     [Header("Input keys")]
     //public Enums.KeyGroups typeOfControl = Enums.KeyGroups.ArrowKeys;
 
+    public KeyCode down = KeyCode.F;
+    public KeyCode up = KeyCode.G;
+
     [Header("Rotation")]
-    public float speed = 5f;
+    public float speed = 20f;
 
     private float spin;
 
@@ -35,15 +38,23 @@ public class RotLeftArm : Physics2DObject
     private void LateUpdate()
     {
 
-        if (Input.GetKeyDown("f"))
+        if (Input.GetKeyDown(down))
         {
-            spin -= 1f;
+            //if(spin > -1f)
+            { spin -= 1f; }
+
+           
+            Debug.Log("Key f value of spin " + spin);
         }
 
-        if (Input.GetKeyDown("g"))
+        if (Input.GetKeyDown(up))
         {
-            spin += 1f;
+            //if (spin < 1f)
+            { spin += 1f; }
+               
+            Debug.Log("Key g value of spin " + spin);
         }
+        spin = Mathf.Clamp(spin, -0.3f, 0.3f);
 
     }
 
